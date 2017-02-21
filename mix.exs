@@ -11,10 +11,10 @@ defmodule UeberauthAuth0.Mixfile do
       description: description,
       source_url: "https://github.com/sntran/ueberauth_auth0",
       homepage_url: "http://hexdocs.pm/ueberauth_auth0",
-      package: package,
+      package: package(),
       elixir: "~> 1.3",
-      deps: deps,
-      docs: docs]
+      deps: deps(),
+      docs: docs()]
   end
 
   def application do
@@ -31,7 +31,7 @@ defmodule UeberauthAuth0.Mixfile do
   end
 
   defp docs do
-    [source_ref: "v#{@version}", main: "readme", extras: docs_extras]
+    [source_ref: "v#{@version}", main: "readme", extras: docs_extras()]
   end
 
   defp docs_extras do
