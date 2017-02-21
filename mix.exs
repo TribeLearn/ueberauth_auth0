@@ -8,7 +8,7 @@ defmodule UeberauthAuth0.Mixfile do
       app: :ueberauth_auth0,
       version: @version,
       name: "Ueberauth Auth0",
-      description: description,
+      description: description(),
       source_url: "https://github.com/sntran/ueberauth_auth0",
       homepage_url: "http://hexdocs.pm/ueberauth_auth0",
       package: package(),
